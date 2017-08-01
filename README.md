@@ -5,7 +5,7 @@
 ## TeamViewer automatically authentication
 &nbsp;&nbsp;A few days ago I worked on my windows cloud VPS with TeamViewer (where I set a custom password). After work I disconnected, at the next time when I wanted to connect, I saw that TeamViewer had auto-filled the password  
 
-![tw_interface](https://github.com/vah13/extractTVpasswords/blob/master/img/tw_interface.png)
+![tw_interface](https://github.com/vah13/extractTVpasswords/blob/master/img/tw_interface.png?raw=true)
 
 I think “Interesting, how can get access to the password? How the password save in my computer?”
 
