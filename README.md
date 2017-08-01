@@ -27,7 +27,7 @@ To extract passwords from memory we wrote two mini programs, in Python and C++ l
 
 Thx Frida team for a wonderful tool! Our python script attaches to the TeamViewer.exe process, gets the base address and memory size of each library in this process. After that, it dumps one by one memory area, searches parts with [00 88] bytes at the start and [00 00 00] bytes in the end and copies them in the array. The next and the last step is choosing end decoding raws according to the regexp and password policy.
 
-![python_work_example](https://github.com/vah13/extractTVpasswords/blob/master/img/python_work_example.png?raw=true)
+![python_work_example](https://github.com/vah13/extractTVpasswords/blob/master/img/python_work_example2.png?raw=true)
 
 After executing the C++ code, you will get this view “asdQWE123” is the password
 
@@ -45,7 +45,7 @@ c++ example
 
 python example
 
-![pyex](https://github.com/vah13/extractTVpasswords/blob/master/img/python_work_example2.png)
+![pyex](https://github.com/vah13/extractTVpasswords/blob/master/img/python_work_example2.png?raw=true)
 
 
 [@NewFranny](https://twitter.com/NewFranny)
