@@ -1,4 +1,4 @@
-# Extract password from TeamViewer memory
+# Extract password from TeamViewer memory using Frida
 
 &nbsp;&nbsp;Hi there, in this article we want to tell about our little research about password security in TeamViewer. The method can help during the pentest time for post exploitation to get access to another machine using TeamViewer. 
 
