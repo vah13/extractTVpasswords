@@ -3,24 +3,24 @@
 &nbsp;&nbsp;Hi there, in this article we want to tell about our little research about password security in TeamViewer. The method can help during the pentest time for post exploitation to get access to another machine using TeamViewer. 
 
 ## TeamViewer automatically authentication
-&nbsp;&nbsp;A few days ago I worked on my windows cloud VPS with TeamViewer (where I set a custom password). After work I disconnected, at the next time when I wanted to connect, I saw that TeamViewer had auto-filled the password  
+&nbsp;&nbsp;A few days ago I worked on my windows cloud VPS with TeamViewer (where I set a custom password). After work I disconnected, at the next time when I wanted to connect, I saw that TeamViewer had auto-filled the password.  
 
 ![tw_interface](https://github.com/vah13/extractTVpasswords/blob/master/img/tw_interface.png?raw=true)
 
-I think “Interesting, how can get access to the password? How the password save in my computer?”
+I think “Interesting, how can i get access to the password? How is the password stored in my computer?”
 
 
 ## Password location
 I dumped the memory of the TeamViewer and grepped password. 
 ![dump](https://github.com/vah13/extractTVpasswords/blob/master/img/dump.png?raw=true)
 
-Ooo yeees, 😊 password in the memory store in Unicode format. It turns out that if you finish work with TeamViewer and don’t kill the process (or exit from TeamViewer
+Ooo yeees, 😊 password in the memory is stored in Unicode format. It turns out that if you finish work with TeamViewer and don’t kill the process (or exit from TeamViewer
 
 ![menu](https://github.com/vah13/extractTVpasswords/blob/master/img/menu.png?raw=true)
 
-the password will be store in memory) 
+the password will be stored in memory) 
 
-&nbsp;&nbsp;After analyzing we understand that in the first red area is a start magic data, in the second red area – end magic data (from time to time, end magic data have this value = 00 00 00 20 00 00).
+&nbsp;&nbsp;After analyzing we understood that the first red area is a start magic data, in the second one – end magic data (from time to time, end magic data has this value = 00 00 00 20 00 00).
 
 ## Script for getting password 
 To extract passwords from memory we wrote two mini programs, in Python and C++ language.
