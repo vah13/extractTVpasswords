@@ -48,5 +48,5 @@ python example
 ![pyex](https://github.com/vah13/extractTVpasswords/blob/master/img/python_work_example.png?raw=true)
 
 
-[@NewFranny]https://twitter.com/NewFranny
+[@NewFranny](https://twitter.com/NewFranny)
 [@vah_13](https://twitter.com/vah_13)
