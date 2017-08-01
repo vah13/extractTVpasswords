@@ -8,14 +8,16 @@
 ![tw_interface](https://github.com/vah13/extractTVpasswords/blob/master/img/tw_interface.png)
 
 I think “Interesting, how can get access to the password? How the password save in my computer?”
-![dump](https://github.com/vah13/extractTVpasswords/blob/master/img/dump.png)
+
 
 ## Password location
 I dumped the memory of the TeamViewer and grepped password. 
-![menu](https://github.com/vah13/extractTVpasswords/blob/master/img/menu.png)
+![dump](https://github.com/vah13/extractTVpasswords/blob/master/img/dump.png)
 
 Ooo yeees, 😊 password in the memory store in Unicode format. It turns out that if you finish work with TeamViewer and don’t kill the process (or exit from TeamViewer
-[44444444]
+
+![menu](https://github.com/vah13/extractTVpasswords/blob/master/img/menu.png)
+
 the password will be store in memory) 
 
 &nbsp;&nbsp;After analyzing we understand that in the first red area is a start magic data, in the second red area – end magic data (from time to time, end magic data have this value = 00 00 00 20 00 00).
