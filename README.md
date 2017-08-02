@@ -31,7 +31,7 @@ Thx Frida team for a wonderful tool! Our python script attaches to the TeamViewe
 
 After executing the C++ code, you will get this view “asdQWE123” is the password
 
-![cpp_poc](https://github.com/vah13/extractTVpasswords/blob/master/img/cpp_poc2.png?raw=true)
+![cpp_poc](https://github.com/vah13/extractTVpasswords/blob/master/img/cpp_poc3.png?raw=true)
  
 ### For the future
 1.	The programs can extract well remote ID and passwords, but he also gets some false positive dates. If we will have free time, we will try to reduce false positive rates. 
